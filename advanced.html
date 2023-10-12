@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Advanced Search</title>
+        <title>Advanced Google Search</title>
     </head>
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q" placeholder="Enter search query">
-            <input type="hidden" name="as_epq" value="">
-            <input type="submit" value="All these words">
+        <form action="https://www.google.com/search" method="get">
+            <label for="all-words">Find pages with… "all these words:"</label>
+            <input type="text" name="as_q" value="">
+            <br>
+            <label for="exact-phrase">Find pages with… "this exact word or phrase:"</label>
+            <input type="text" name="as_epq" value="">
+            <br>
+            <label for="any-words">Find pages with… "any of these words:"</label>
+            <input type="text" name="as_oq" value="">
+            <br>
+            <label for="none-words">Find pages with… "none of these words:"</label>
+            <input type="text" name="as_eq" value="">
+            <br>
+            <input type="submit" value="Search">
         </form>
     </body>
 </html>
